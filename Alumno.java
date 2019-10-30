@@ -14,7 +14,18 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        
+        if (nombre.length() < 3){
+            System.out.println ("Error, se necesitan mas de tres caracteres");
+       
+        }
+        else if(numeroMatricula.length() < 4) {
+             System.out.println ("Error, se necesitan mas de cuatro caracteres");
+        
+        }
+    
     }
+    
 
     /**
      * Devuelve el nombre completo del alumno
